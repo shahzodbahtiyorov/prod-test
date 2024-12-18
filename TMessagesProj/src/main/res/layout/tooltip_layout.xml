@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/tooltip_background"
+    android:layout_margin="12dp">
+
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:contentDescription="Info Icon"
+        android:src="@drawable/ic_info"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tooltipText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Для отправки денег из России на карты HUMO, UZCARD  введите номер карты получателя!"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        tools:ignore="HardcodedText" />
+</LinearLayout>

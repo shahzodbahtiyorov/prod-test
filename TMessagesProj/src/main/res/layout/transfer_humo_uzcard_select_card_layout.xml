@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/accountBalanceContainer"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Card Details Container -->
+            <LinearLayout
+                android:id="@+id/cardDetailsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_edittext"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                tools:ignore="UselessParent">
+
+                <!-- Sender Card Number -->
+                <TextView
+                    android:id="@+id/senderCardNumberLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Номер карты отправителя"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="4dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/receiverCardNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9860 06•• •••• 4411"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="8dp"
+                    tools:ignore="HardcodedText" />
+
+                <!-- Divider under Sender Card Number -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="@drawable/dashed_line_monitoring"
+                    />
+
+                <!-- Receiver Card Number -->
+                <TextView
+                    android:id="@+id/receiverCardNumberLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Номер карты получателя"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="4dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/senderCardNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9860 12•• •••• 0202"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="8dp"
+                    tools:ignore="HardcodedText" />
+
+                <!-- Divider under Receiver Card Number -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="@drawable/dashed_line_monitoring"
+                    />
+                <!-- Transaction Date -->
+                <TextView
+                    android:id="@+id/transactionDateLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Дата транзакции"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="4dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/transactionDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="29.10.2024, 22:01"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="8dp"
+                    tools:ignore="HardcodedText" />
+
+                <!-- Divider under Transaction Date -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="@drawable/dashed_line_monitoring"
+                    />
+
+                <!-- Transfer Amount -->
+                <TextView
+                    android:id="@+id/transferAmountLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Сумма перевода"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="4dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/transferAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100 000.0 UZS"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="8dp"
+                    tools:ignore="HardcodedText" />
+
+                <!-- Divider under Transfer Amount -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="@drawable/dashed_line_monitoring"
+                    />
+
+                <!-- Transfer Fee -->
+                <TextView
+                    android:id="@+id/transferFeeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Комиссия за перевод"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="4dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/transferFee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.0 UZS"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="8dp"
+                    tools:ignore="HardcodedText" />
+
+                <!-- Divider under Transfer Fee -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="@drawable/dashed_line_monitoring"
+                    />
+
+                <!-- Total Amount -->
+                <TextView
+                    android:id="@+id/totalAmountLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Общая сумма"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="4dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/totalAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100 000.0 UZS"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="8dp"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Account Balance and Card Info -->
+    <LinearLayout
+        android:id="@+id/accountBalanceContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp"
+        android:gravity="center_vertical"
+        android:layout_above="@+id/nextButton"
+        android:layout_marginBottom="8dp">
+
+        <ImageView
+            android:id="@+id/cardLogo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_uzcard"
+            android:layout_marginEnd="8dp" />
+
+        <LinearLayout
+            android:id="@+id/select_card"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/accountBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="253,153.31 UZS"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/cardDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="•• 4411 | Card holder name"
+                android:textSize="14sp"
+                android:textColor="#A8A8A8"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/arrowIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_dropdown" />
+    </LinearLayout>
+
+    <!-- Next Button -->
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:text="Дальше"
+        android:background="@drawable/rounded_button"
+        android:textColor="#FFFFFF"
+        tools:ignore="HardcodedText" />
+</RelativeLayout>

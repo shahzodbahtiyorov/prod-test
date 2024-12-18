@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="AppName">SuperApp</string>
+    <string name="AppNameBeta">SuperApp Beta</string>
+    <string name="LanguageName">Oʻzbek</string>
+    <string name="English">Ingliz</string>
+    <string name="LanguageNameInEnglish">Uzbek</string>
+    <string name="LanguageCode">uz</string>
+    <string name="ContinueOnThisLanguage">O‘zbek tilida davom eting</string>
+
+
+    <!--Finance-->
+    <string name="Finance">Moliya</string>
+    <string name="verified_user">Tasdiqlangan foydalanuvchi</string>
+    <string name="personal_data">Shaxsiy ma\'lumotlar</string>
+    <string name="date_of_birth">Tug\'ilgan kuni</string>
+    <string name="passport_series">Passport seriya va raqami</string>
+    <string name="validity_period">Amal qilish muddati</string>
+    <string name="address">Manzil</string>
+    <string name="PINFL">JSHIR</string>
+    <string name="Overall_balance">Umumiy balans</string>
+    <string name="my_cards">Mening kartalarim</string>
+    <string name="All_cards">Barcha kartalar</string>
+    <string name="Operation_history">Operatsiya tarixi</string>
+    <string name="All_operations">Barcha operatsiyalar</string>
+    <string name="payment">To\'lov</string>
+    <string name="payments">To\'lovlar</string>
+    <string name="translation">O\'tkazma</string>
+    <string name="empty_card_title">Siz hali moliyangizni tuzatmagansiz.</string>
+    <string name="emtpy_card_subtitle">Moliyangizni sozlash uchun karta qo\'shing</string>
+    <string name="add_card">Karta qo\'shish</string>
+    <string name="otp_code_number">Raqamga tasdiqlash kodi yuboriladi</string>
+    <string name="resend_code">Kodni qayta yuborish</string>
+    <string name="verification_code">Tasdiq kodi</string>
+    <string name="Card_number">Karta raqami</string>
+    <string name="Owner">Egasi</string>
+    <string name="Bank">Bank</string>
+    <string name="Card_name">Karta nomi</string>
+    <string name="Card_Details">Karta ma\'lumotlari</string>
+    <string name="add_card_title">Toʻlovlar uchun foydalanmoqchi boʻlgan kartani qoʻshing</string>
+    <string name="card_exp">Kartaning amal qilish muddati</string>
+    <string name="enter_the_card_name">Karta nomini kiriting</string>
+    <string name="all">Barchasi</string>
+    <string name="in_sums">So\'mda</string>
+    <string name="international">Xalqaro</string>
+    <string name="transfers">O\'tkazmalar</string>
+    <string name="monitoring">Monitoring</string>
+    <string name="add_new_card">Yangi karta qo\'shish</string>
+
+
+
+
+
+    <string name="Chat_user_cards_empty">Ushbu foydalanuvchida SuperApp dan qo\'shilgan kartalar muvjud emas</string>
+
+
+
+
+
+
+</resources>

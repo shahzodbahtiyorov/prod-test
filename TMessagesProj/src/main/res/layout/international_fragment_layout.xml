@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
+    <!-- Sender Country Selection Label -->
+    <TextView
+        android:id="@+id/senderCountryLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выберите страну отправителя"
+        android:textSize="14sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="8dp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Sender Country Dropdown -->
+    <LinearLayout
+        android:id="@+id/senderCountryContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/senderCountryLabel"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/senderFlagIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_ru_flags"
+            android:contentDescription="Sender Flag Icon"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/senderCountryText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Rossiya"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_marginStart="8dp"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/senderDropdownIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_dropdown"
+            android:contentDescription="Sender Dropdown Icon"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <!-- Receiver Country Selection Label -->
+    <TextView
+        android:id="@+id/receiverCountryLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выберите страну получателя"
+        android:textSize="14sp"
+        android:textColor="#333333"
+        android:layout_below="@id/senderCountryContainer"
+        android:layout_marginBottom="8dp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Receiver Country Dropdown -->
+    <LinearLayout
+        android:id="@+id/receiverCountryContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/receiverCountryLabel"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/receiverFlagIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_uz_flags"
+            android:contentDescription="Receiver Flag Icon"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/receiverCountryText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="O'zbekiston"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_marginStart="8dp" />
+
+        <ImageView
+            android:id="@+id/receiverDropdownIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_dropdown"
+            android:contentDescription="Receiver Dropdown Icon" />
+    </LinearLayout>
+
+    <!-- Next Button -->
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Дальше"
+        android:background="@drawable/rounded_button"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp" />
+</RelativeLayout>

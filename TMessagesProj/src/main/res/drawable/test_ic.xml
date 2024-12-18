@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="80dp"
+    android:height="58dp"
+    android:viewportWidth="80"
+    android:viewportHeight="58">
+    <path
+        android:fillColor="#E5F2FF"
+        android:pathData="M 40 0 C 49.941125497 0 58 8.05887450305 58 18 C 58 27.941125497 49.941125497 36 40 36 C 30.058874503 36 22 27.941125497 22 18 C 22 8.05887450305 30.058874503 0 40 0 Z" />
+    <path
+        android:strokeColor="#5A8FBB"
+        android:strokeWidth="1.5"
+        android:strokeLineJoin="round"
+        android:strokeMiterLimit="10"
+        android:strokeLineCap="round"
+        android:pathData="M30 18.6094H47" />
+    <path
+        android:strokeColor="#5A8FBB"
+        android:strokeWidth="1.5"
+        android:strokeLineJoin="round"
+        android:strokeLineCap="round"
+        android:pathData="M47 16.2808V23.4308C46.97 26.2808 46.19 27.0008 43.22 27.0008H33.78C30.76 27.0008 30 26.2508 30 23.2708V16.2808C30 13.5808 30.63 12.7108 33 12.5708C33.24 12.5608 33.5 12.5508 33.78 12.5508H43.22C46.24 12.5508 47 13.3008 47 16.2808Z" />
+    <path
+        android:fillColor="#5A8FBB"
+        android:strokeColor="#5A8FBB"
+        android:strokeWidth="1.5"
+        android:strokeLineJoin="round"
+        android:strokeLineCap="round"
+        android:pathData="M50 12.73V19.72C50 22.42 49.37 23.29 47 23.43V16.28C47 13.3 46.24 12.55 43.22 12.55H33.78C33.5 12.55 33.24 12.56 33 12.57C33.03 9.72 33.81 9 36.78 9H46.22C49.24 9 50 9.75 50 12.73Z" />
+    <path
+        android:strokeColor="#5A8FBB"
+        android:strokeWidth="1.5"
+        android:strokeLineJoin="round"
+        android:strokeMiterLimit="10"
+        android:strokeLineCap="round"
+        android:pathData="M33.25 23.8105H34.97" />
+    <path
+        android:strokeColor="#5A8FBB"
+        android:strokeWidth="1.5"
+        android:strokeLineJoin="round"
+        android:strokeMiterLimit="10"
+        android:strokeLineCap="round"
+        android:pathData="M37.1099 23.8105H40.5499" />
+</vector>

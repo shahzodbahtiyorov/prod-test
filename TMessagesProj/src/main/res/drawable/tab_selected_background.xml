@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#E0E0E0" /> <!-- Shaffof kulrang fon -->
+    <corners android:radius="12dp" /> <!-- Burchak radiusi -->
+</shape>

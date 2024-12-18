@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
+
+
+    <TextView
+        android:id="@+id/from_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yuboruvchi"
+        android:textSize="16sp"
+        android:paddingBottom="8sp"
+        android:textColor="#1F1F1F"
+        android:fontFamily="@font/manrope_semibold"
+        tools:ignore="HardcodedText" />
+    <LinearLayout
+        android:id="@+id/fromChatUserCards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp"
+        android:layout_below="@+id/from_label"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <ImageView
+            android:id="@+id/fromCardLogo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_uzcard"
+            android:layout_marginEnd="8dp" />
+
+        <LinearLayout
+            android:id="@+id/from_select_card"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/accountBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="253,153.31 UZS"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/cardDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="•• 4411 | Card holder name"
+                android:textColor="#757575"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_dropdown" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/to_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Qabul qiluvchi"
+        android:textSize="16sp"
+        android:paddingBottom="8sp"
+        android:layout_below="@+id/fromChatUserCards"
+        android:textColor="#1F1F1F"
+        android:fontFamily="@font/manrope_semibold"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:id="@+id/toChatUserCards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/to_label"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <ImageView
+            android:id="@+id/toCardLogo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_uzcard"
+            android:layout_marginEnd="8dp" />
+
+        <LinearLayout
+            android:id="@+id/to_select_card"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/toCardNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8600 **** **** 2345"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/toCardOwnerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Card holder name"
+                android:textColor="#A8A8A8"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText,TextContrastCheck" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_dropdown" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/transfer_input_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Summa"
+        android:textSize="16sp"
+        android:paddingBottom="8sp"
+        android:layout_below="@+id/toChatUserCards"
+        android:textColor="#1F1F1F"
+        android:fontFamily="@font/manrope_semibold"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/transferAmount"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/transfer_input_label"
+        android:background="@drawable/edit_text_background"
+        android:hint="Сумма перевода"
+        android:inputType="number"
+        android:textColor="#333333"
+        android:textColorHint="#757575"
+        android:textSize="16sp"
+        tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+
+    <!-- Next Button -->
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded_empty_button"
+        android:text="Дальше"
+        android:textColor="#FFFFFF"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
+</RelativeLayout>

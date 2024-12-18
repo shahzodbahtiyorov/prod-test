@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1045717678218",
+    "project_id": "superapp-fb2c8",
+    "storage_bucket": "superapp-fb2c8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1045717678218:android:96966699bf6dd6ad651573",
+        "android_client_info": {
+          "package_name": "com.superapp.mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAj61Qalr_ARNBRcDQ28dOVIwJB8thRzfg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1045717678218:android:6c87cc6ffb69d848651573",
+        "android_client_info": {
+          "package_name": "com.superapp.mobile.beta"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAj61Qalr_ARNBRcDQ28dOVIwJB8thRzfg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

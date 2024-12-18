@@ -1,0 +1,250 @@
+<!--suppress ALL -->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F5F5F5"
+        android:padding="16dp">
+
+        <!-- Card Number Input Label -->
+        <TextView
+            android:id="@+id/receiverCardNumberLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Номер карты получателя"
+            android:textSize="14sp"
+            android:textColor="#333333" />
+
+        <!-- Card Number Input -->
+        <EditText
+            android:id="@+id/receiverCardNumberInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_below="@id/receiverCardNumberLabel"
+            android:layout_marginTop="8dp"
+            android:padding="12dp"
+            android:hint="Введите номер карты получателя"
+            android:background="@drawable/rounded_edittext"
+            android:textSize="16sp" />
+
+        <!-- Card Icon -->
+        <ImageView
+            android:id="@+id/cardIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignTop="@id/receiverCardNumberInput"
+            android:layout_alignEnd="@id/receiverCardNumberInput"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="7dp"
+            android:contentDescription="Card Icon"
+            android:src="@drawable/ic_card_icon" />
+
+        <!-- Card Owner Name -->
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:indeterminate="true"
+            android:layout_below="@id/receiverCardNumberInput"
+            android:indeterminateTint="#1F1F1F"
+            android:indeterminateTintMode="src_in"
+            style="?android:attr/progressBarStyleLarge"
+            android:visibility="gone"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/card_owner_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progressBar2"
+            android:layout_marginTop="2dp"
+            android:visibility="gone"
+            android:text="Card Owner"
+            android:textSize="14sp"
+            android:textColor="#333333" />
+
+        <!-- Transfer Amount Label -->
+        <TextView
+            android:id="@+id/transferAmountLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_owner_name"
+            android:layout_marginTop="8dp"
+            android:text="Сумма перевода"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            tools:ignore="HardcodedText" />
+
+        <!-- Transfer Amount Container -->
+        <LinearLayout
+            android:id="@+id/amountContainer"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/transferAmountLabel"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_edittext"
+            android:padding="12dp">
+
+            <EditText
+                android:id="@+id/transferAmountInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Сумма перевода"
+                android:inputType="number"
+                android:textSize="16sp"
+                android:background="@android:color/transparent"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/currencyLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="RUB"
+                android:textSize="16sp"
+                android:drawableEnd="@drawable/ic_dropdown"
+                android:textColor="#333333"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/errorTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/amountContainer"
+            android:layout_marginTop="8dp"
+            android:text="Error"
+            android:visibility="gone"
+            android:textSize="12sp"
+            android:textColor="#D92D20" />
+        <!-- Conversion Rate Text -->
+        <TextView
+            android:id="@+id/conversionRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/errorTextView"
+            android:layout_marginTop="12dp"
+            android:visibility="gone"
+            android:text="1 RUB = 134.5 UZS"
+            android:textSize="12sp"
+            android:textColor="#888888" />
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:indeterminate="true"
+            android:layout_below="@id/conversionRate"
+            android:indeterminateTint="#1F1F1F"
+            android:indeterminateTintMode="src_in"
+            style="?android:attr/progressBarStyleLarge"
+            android:visibility="visible"
+            tools:ignore="MissingConstraints" />
+
+        <!-- Bottom Container -->
+        <LinearLayout
+            android:id="@+id/bottomContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+
+            <!-- Terms Checkbox -->
+            <CheckBox
+                android:id="@+id/termsCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Я ознакомился с условиями Оферты и полностью согласен"
+                android:textColor="#333333"
+                android:checked="false"
+                android:layout_marginBottom="12dp"
+                tools:ignore="HardcodedText" />
+
+            <!-- Button Row -->
+            <LinearLayout
+                android:id="@+id/buttonRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_marginBottom="12dp"
+                tools:ignore="DisableBaselineAlignment">
+
+                <!-- History Button -->
+                <LinearLayout
+                    android:id="@+id/historyButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:background="@drawable/rounded_edittext"
+                    android:padding="12dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/historyIcon"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/ic_history"
+                        android:layout_marginEnd="8dp"
+                        android:contentDescription="History Icon" />
+
+                    <TextView
+                        android:id="@+id/historyButtonText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="История \nпереводов"
+                        android:textSize="16sp"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <!-- Transfer to My Card Button -->
+                <LinearLayout
+                    android:id="@+id/transferToMyCardButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:background="@drawable/rounded_edittext"
+                    android:padding="12dp"
+                    android:gravity="center"
+                    android:layout_marginStart="8dp">
+
+                    <ImageView
+                        android:id="@+id/transferIcon"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/ic_transfer"
+                        android:layout_marginEnd="12dp"
+                        android:contentDescription="Transfer Icon" />
+
+                    <TextView
+                        android:id="@+id/transferButtonText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Перевод на \nмою карту"
+                        android:textSize="16sp"
+                        android:textColor="#000000" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Next Button -->
+            <Button
+                android:id="@+id/nextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Дальше"
+                android:background="@drawable/rounded_button"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

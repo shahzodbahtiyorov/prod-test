@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/nextButton"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cardNumberLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Номер карты получателя"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                tools:ignore="HardcodedText"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_edittext"
+                android:padding="12dp"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:id="@+id/cardIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/humo_card"
+                    android:contentDescription="Card Icon"
+                    tools:ignore="HardcodedText"/>
+
+                <TextView
+                    android:id="@+id/cardNumberText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9860 1201 1102 0202"
+                    android:layout_marginStart="8dp"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    tools:ignore="HardcodedText"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/cardHolderName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Falonchiyev Pistonchi"
+                android:textSize="14sp"
+                android:textColor="#333333"
+                android:layout_marginBottom="16dp"
+                tools:ignore="HardcodedText"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_edittext"
+                android:padding="12dp"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/transferAmount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Сумма перевода"
+                    android:textSize="16sp"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:textColor="#333333"
+                    android:textColorHint="#A8A8A8"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/currencyDropdown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="UZS"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:drawableEnd="@drawable/ic_dropdown"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"
+                    tools:ignore="HardcodedText,UseCompatTextViewDrawableXml" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/button_10000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:text="10 000"
+                    android:padding="2dp"
+                    android:visibility="gone"
+                    android:drawableEnd="@drawable/ic_amount_delete"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:textColor="#333333"
+                    tools:ignore="ButtonStyle,HardcodedText" />
+
+                <Button
+                    android:id="@+id/button_50000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:text="50 000"
+                    android:padding="2dp"
+                    android:visibility="gone"
+                    android:drawableEnd="@drawable/ic_amount_delete"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:textColor="#333333"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/button_100000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:text="100 000"
+                    android:layout_margin="4dp"
+                    android:visibility="gone"
+                    android:drawableEnd="@drawable/ic_amount_delete"
+                    android:padding="2dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:textColor="#333333"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Дальше"
+        android:background="@drawable/rounded_button"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/nextButton"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/cardNumberLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Номер карты получателя"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:lineSpacingExtra="0dp"
+                android:letterSpacing="0"
+                android:textColor="#1F1F1F"
+                android:layout_marginBottom="8dp"
+                tools:ignore="HardcodedText"/>
+
+
+            <LinearLayout
+                android:id="@+id/cardInputContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/rounded_edittext"
+                android:padding="8dp">
+
+
+            <ImageView
+                    android:id="@+id/searchIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_search"
+                    android:contentDescription="Search Icon"
+                    tools:ignore="HardcodedText"/>
+
+                <EditText
+                    android:id="@+id/cardNumberInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@null"
+                    android:hint="Введите номер карты получателя"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:lineSpacingExtra="0dp"
+                    android:minHeight="36dp"
+                    android:textColor="#333333"
+                    android:textColorHint="#A8A8A8"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/cardOwnerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Card owner name"
+                android:visibility="gone"
+                android:textSize="14sp"
+                android:textColor="#6C6C6C"
+                android:layout_marginBottom="8dp"
+                tools:ignore="HardcodedText"/>
+            <!-- Recent Transactions Header -->
+            <TextView
+                android:id="@+id/recentTransactionsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/manrope_bold"
+                android:text="Последние транзакции"
+                android:textSize="14sp"
+                android:textColor="#333333"
+                android:layout_marginBottom="8dp"
+                tools:ignore="HardcodedText"/>
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:indeterminate="true"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:indeterminateTint="#1F1F1F"
+                android:indeterminateTintMode="src_in"
+                style="?android:attr/progressBarStyleLarge"
+                android:visibility="visible"
+                tools:ignore="MissingConstraints" />
+            <!-- Recent Transactions List -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recentTransactionsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginBottom="16dp"
+                tools:listitem="@layout/item_transaction" />
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Дальше"
+        android:background="@drawable/rounded_button"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>

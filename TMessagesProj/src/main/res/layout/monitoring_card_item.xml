@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="@drawable/rounded_edittext"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/cardIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/humo_card"
+        android:contentDescription="Card Icon"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingStart="12dp">
+
+        <TextView
+            android:id="@+id/cardAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10,600,000 UZS"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/cardDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="•• 1289 | Card holder name"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/checkIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/success_icon"
+        android:contentDescription="Selected"
+        tools:ignore="HardcodedText" />
+</LinearLayout>

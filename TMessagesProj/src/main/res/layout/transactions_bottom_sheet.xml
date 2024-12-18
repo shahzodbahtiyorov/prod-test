@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- Header with title and close button -->
+    <View
+        android:id="@+id/headerDivide"
+        android:layout_width="56dp"
+        android:layout_height="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:background="#D3D3D3" />
+
+    <LinearLayout
+        android:id="@+id/headerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        tools:ignore="UseCompoundDrawables">
+
+        <TextView
+            android:id="@+id/headerTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="O'tkazma tafsilotlari"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/closeButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_delete_black"
+            android:contentDescription="Close"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/headerDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/headerContainer"
+        android:background="@drawable/divider"
+        android:layout_marginBottom="8dp" />
+
+
+    <LinearLayout
+        android:id="@+id/headerContaine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_below="@id/headerDivider"
+        android:layout_marginTop="16dp"
+        tools:ignore="UseCompoundDrawables">
+
+        <TextView
+            android:id="@+id/agent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agent"
+            android:layout_marginBottom="8dp"
+            android:textSize="18sp"
+            android:textColor="#6C6C6C"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/agentTitla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ATB “Universalbank” E-POS (ATB “Universalbank” Toshkent filiali) Universal"
+            android:textSize="18sp"
+            android:fontFamily="@font/sf_pro_text_400"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:background="#D3D3D3"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agent"
+            android:layout_marginBottom="8dp"
+            android:textSize="18sp"
+            android:textColor="#6C6C6C"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/serviceName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="O'tkazma"
+            android:textSize="18sp"
+            android:fontFamily="@font/sf_pro_text_400"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/headerContainerPdf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_below="@+id/headerContaine"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="12dp"
+        android:gravity="center"
+        tools:ignore="UseCompoundDrawables">
+        <ImageView
+            android:id="@+id/ic_pdf"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_pdf"
+            android:contentDescription="Close"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/headerPdfTitle"
+            android:layout_width="wrap_content"
+            android:padding="16dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="16dp"
+            android:text="O'tkazma tafsilotlari"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
